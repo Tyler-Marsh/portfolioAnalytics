@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "NODE_PATH=./dist node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +19,9 @@
     "@types/node": "^18.16.1",
     "@types/pg": "^8.6.6",
     "ts-node": "^10.9.1",
-    "tsx": "^3.12.6"
+    "tsc": "^2.0.4",
+    "tsx": "^3.12.6",
+    "typescript": "^5.1.6"
   },
   "dependencies": {
     "cors": "^2.8.5",
